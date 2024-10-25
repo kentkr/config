@@ -27,10 +27,12 @@ export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 export GEM_HOME="$HOME/.gem"
 
 # export python3 path to path
-export PATH="/opt/homebrew/bin:$PATH"
+export PATH="/opt/homebrew/opt/python/libexec/bin:$PATH"
 
 # python3-sphinx path for making spark docs
 export PATH="/opt/homebrew/opt/sphinx-doc/bin:$PATH"
+# set specific python version - 3.11
+#export PATH="$(brew --prefix)/opt/python@3.11/libexec/bin:$PATH"
 
 # venv activation
 alias sv='source venv/bin/activate'
