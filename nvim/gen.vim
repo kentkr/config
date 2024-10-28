@@ -162,6 +162,7 @@ set nofoldenable
 "https://www.linuxfordevices.com/tutorials/linux/setup-coc-autocompletion-vim
 "Coc pyright settings
 
+let g:coc_global_extensions = ['coc-pyright']
 " Use tab for trigger completion with characters ahead and navigate
 " NOTE: There's always complete item selected by default, you may want to enable
 " no select by `"suggest.noselect": true` in your configuration file
