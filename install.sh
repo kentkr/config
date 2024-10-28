@@ -17,6 +17,4 @@ brew install --cask slack
 brew install node
 npm install -g neovim
 brew install tmux
-
-# install personal config
-git clone https://github.com/kentkr/config.git
+brew install font-hack-nerd-font

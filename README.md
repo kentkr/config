@@ -4,11 +4,11 @@ My personal config
 
 # Install
 
-To install all software and setup most configs just run `source configure.sh`.
+Setup your git ssh and clone the repo
 
-## iterm
+```
+git clone git@github.com:kentkr/config.git
+```
 
-Manual steps for iterm:
-
-1- 
+Move into the dir `cd config` and run `source ./configure.sh`
 

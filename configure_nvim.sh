@@ -1,7 +1,7 @@
 #!/bin/zsh
 
-# neovim setup
-cp -r ./nvim ~/.config/
+# symlink to neovim config
+ln -s $PWD/nvim ~/.config/nvim
 
 # vim-plug install
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
@@ -9,6 +9,3 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 
 # node install
 curl -sL install-node.vercel.app/lts | bash
-
-# spaceduck modifications
-cp -r spaceduck ~/.local/share/nvim/plugged/
