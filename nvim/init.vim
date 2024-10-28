@@ -7,4 +7,6 @@ call plug#begin()
 call plug#end()
 
 source $HOME/.config/nvim/gen.vim
-source $HOME/.config/nvim/local.vim
+if filereadable(expand('$HOME/.config/nvim/local_plugins.vim'))
+    source $HOME/.config/nvim/local.vim
+endif
