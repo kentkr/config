@@ -10,6 +10,7 @@ brew install git
 
 # different softwares
 brew install python
+brew install python@3.11
 brew install --cask google-chrome
 brew install --cask iterm2
 brew install neovim@0.10.2
