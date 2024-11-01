@@ -19,3 +19,4 @@ brew install node
 npm install -g neovim
 brew install tmux
 brew install font-hack-nerd-font
+brew install ggrep
