@@ -31,3 +31,5 @@ Plug 'Vimjas/vim-python-pep8-indent'
 " c++ debugger
 Plug 'puremourning/vimspector', {'tag': '4240501875'}
 
+" ansii escape colors in files
+Plug 'powerman/vim-plugin-AnsiEsc', {'tag': '13.3'}
