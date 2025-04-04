@@ -149,7 +149,22 @@ require'nvim-treesitter.configs'.setup {
     -- Instead of true it can also be a list of languages
     additional_vim_regex_highlighting = true,
   },
-  indent = {enable = false}
+  indent = {enable = false},
+  yati = {
+    enable = true,
+    -- Disable by languages, see `Supported languages`
+    disable = { "python" },
+
+    -- Whether to enable lazy mode (recommend to enable this if bad indent happens frequently)
+    default_lazy = true,
+
+    -- Determine the fallback method used when we cannot calculate indent by tree-sitter
+    --   "auto": fallback to vim auto indent
+    --   "asis": use current indent as-is
+    --   "cindent": see `:h cindent()`
+    -- Or a custom function return the final indent result.
+    default_fallback = "auto"
+  },
 }
 EOF
 
@@ -272,7 +287,8 @@ nmap <Leader>dR <Plug>VimspectorRestart
 nmap <Leader>do <Plug>VimspectorStepOut
 nmap <Leader>ds <Plug>VimspectorStepInto
 " same as "next"
-nmap <Leader>dn <Plug>VimspectorStepOver
+"nmap <Leader>dn <Plug>VimspectorStepOver
+nmap <Leader>d<Space> <Plug>VimspectorStepOver
 
 " for normal mode - the word under the cursor
 nmap <Leader>di <Plug>VimspectorBalloonEval
@@ -282,3 +298,14 @@ xmap <Leader>di <Plug>VimspectorBalloonEval
 " cf copies file name
 nnoremap <leader>cf :execute 'let @+ = expand("%:t:r")'<CR>
 
+" save a session then quit all
+nnoremap <leader>qs :mksession! ./.session.vim<CR>:qa<CR>
+
+" indent-blankline.nvim
+lua << EOF
+require('ibl').setup({
+    scope = {
+        enabled = true,
+    },
+})
+EOF
