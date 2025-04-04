@@ -1,5 +1,4 @@
 
-
 " vim-databricks
 " normal mode get all text
 nnoremap <leader>sp :call databricks#main(databricks#get_buffer_text())<CR>

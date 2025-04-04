@@ -274,7 +274,7 @@ function! OpenVimspector(dir)
     call system(comm)
 endfunction
 
-let g:vimspector_install_gadgets = ['CodeLLDB']
+let g:vimspector_install_gadgets = ['CodeLLDB', 'debugpy']
 nnoremap <Leader>dl :call vimspector#Launch()<CR>
 "nnoremap <Leader>dl :call OpenVimspector(getcwd())<CR>
 nnoremap <Leader>dr :call vimspector#Reset()<CR>
@@ -286,8 +286,6 @@ nnoremap <Leader>dB :call vimspector#ClearBreakpoints()<CR>
 nmap <Leader>dR <Plug>VimspectorRestart
 nmap <Leader>do <Plug>VimspectorStepOut
 nmap <Leader>ds <Plug>VimspectorStepInto
-" same as "next"
-"nmap <Leader>dn <Plug>VimspectorStepOver
 nmap <Leader>d<Space> <Plug>VimspectorStepOver
 
 " for normal mode - the word under the cursor
@@ -297,6 +295,9 @@ xmap <Leader>di <Plug>VimspectorBalloonEval
 
 " cf copies file name
 nnoremap <leader>cf :execute 'let @+ = expand("%:t:r")'<CR>
+
+" open py definition in preview
+nmap <silent> <leader>p :call CocAction('jumpDefinition', 'pedit')<CR>
 
 " save a session then quit all
 nnoremap <leader>qs :mksession! ./.session.vim<CR>:qa<CR>
