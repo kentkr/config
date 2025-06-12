@@ -1,0 +1,4 @@
+{
+  "venvPath": "<absolute path to venv parent dir>",
+  "venv": "<relative path to venv dir>"
+}
