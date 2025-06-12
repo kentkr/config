@@ -7,12 +7,12 @@
         "default": true,
         "type": "python",
         "request": "launch",
-        "cwd": "/Users/kylekent/Desktop/anki/",
+        "cwd": "<absolute path>",
         "python": "venv/bin/python3",
         "stopOnEntry": true,
         "console": "integratedTerminal",
         "debugOptions": [],
-        "program": "get_definitions.py",
+        "program": "<relative path>",
         "justMyCode": false
       }
     }
