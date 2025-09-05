@@ -38,3 +38,6 @@ Plug 'lukas-reineke/indent-blankline.nvim', {'tag': 'v3.9.0'}
 
 " ansii escape colors in files
 Plug 'powerman/vim-plugin-AnsiEsc', {'tag': '13.3'}
+
+" markdown renderer
+Plug 'MeanderingProgrammer/render-markdown.nvim', {'tag': 'v8.6.0'}

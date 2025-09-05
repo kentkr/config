@@ -43,3 +43,6 @@ export PATH="/opt/homebrew/opt/protobuf@3/bin:$PATH"
 export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
 
 alias gs='git status'
+
+# load secrets
+source ~/.secrets
