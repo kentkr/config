@@ -61,11 +61,11 @@ set clipboard+=unnamedplus
 " global indentation settings
 set tabstop=4
 auto FileType htmldjango setl tabstop=2
-auto FileType javascript,typescript,javascriptreact,typescriptreact,json setl tabstop=2
+auto FileType javascript,typescript,javascriptreact,typescriptreact,json,css setl tabstop=2
 
 set shiftwidth=4
 auto FileType htmldjango setl shiftwidth=2
-auto FileType javascript,typescript,javascriptreact,typescriptreact,json setl shiftwidth=2
+auto FileType javascript,typescript,javascriptreact,typescriptreact,json,css setl shiftwidth=2
 
 set expandtab
 
