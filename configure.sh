@@ -3,7 +3,7 @@
 # install base software
 source ./install.sh
 # symlink to zshrc
-ln -s $PWD/.zshrc ~/.zshrc
+ln -s $PWD/zsh/.zshrc ~/.zshrc
 # create secrets file
 touch ~/.secrets
 # general software install
