@@ -7,7 +7,7 @@
         "default": true,
         "type": "python",
         "request": "launch",
-        "cwd": "<absolute path>",
+        "cwd": ".",
         "python": "venv/bin/python3",
         "stopOnEntry": true,
         "console": "integratedTerminal",

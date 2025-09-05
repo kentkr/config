@@ -4,6 +4,8 @@
 source ./install.sh
 # symlink to zshrc
 ln -s $PWD/.zshrc ~/.zshrc
+# create secrets file
+touch ~/.secrets
 # general software install
 source ./configure_gen.sh
 # neovim setup

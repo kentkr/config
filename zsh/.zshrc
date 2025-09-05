@@ -43,3 +43,9 @@ export PATH="/opt/homebrew/opt/protobuf@3/bin:$PATH"
 export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
 
 alias gs='git status'
+
+# java home for pyspark
+export JAVA_HOME=/opt/homebrew/opt/openjdk@11/libexec/openjdk.jdk/Contents/Home
+
+# load secrets
+source ~/.secrets
