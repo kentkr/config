@@ -312,3 +312,6 @@ require('ibl').setup({
     },
 })
 EOF
+
+" render markdown toggle
+nnoremap <leader>rm :RenderMarkdown toggle<CR>
