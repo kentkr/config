@@ -9,3 +9,6 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 
 # node install
 curl -sL install-node.vercel.app/v22.10.0 | bash
+
+# make sure xterm-256color supports strikethrough
+tic -x myterm.info
