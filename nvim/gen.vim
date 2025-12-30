@@ -42,9 +42,9 @@ require('lualine').setup {
             {
                 'diagnostics', 
                 diagnostics_color = {
-                    error = 'CocErrorSign',
-                    warn = 'CocWarningSign',
-                    hint = 'CocHintSign'
+                    error = { fg = '#e33400' },
+                    warn = { fg = '#f2ce00' },
+                    hint = { fg = '#30365F' }
                 }
             }, 
             {
