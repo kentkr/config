@@ -30,12 +30,37 @@ colorscheme spaceduck
 " activate lualine 
 lua << END
 require('lualine').setup {
-  options = {
-    component_separators = { left = '', right = ''},
-    section_separators = { left = '', right = ''},
+    options = {
+        component_separators = { left = '', right = ''},
+        section_separators = { left = '', right = ''},
+    },  
+    sections = {
+        lualine_a = {'mode'},
+        lualine_b = {{'filename', path=1}},
+        lualine_c = {'encoding', 'fileformat', 'filetype'},
+        lualine_x = {
+            {
+                'diagnostics', 
+                diagnostics_color = {
+                    error = 'CocErrorSign',
+                    warn = 'CocWarningSign',
+                    hint = 'CocHintSign'
+                }
+            }, 
+            {
+                'diff',
+                diffcolor = {
+                    added = 'LuaLineDiffAdd',
+                    modified = 'LuaLineDiffChange',
+                    removed = 'LuaLineDiffDelete'
+                }
+            }
+        },
+        lualine_y = {'branch'},
+        lualine_z = {'location'}
     },
     inactive_sections = {
-        lualine_a = {'filename'},
+        lualine_a = {{'filename', path=1}},
         lualine_b = {},
         lualine_c = {},
         lualine_x = {},

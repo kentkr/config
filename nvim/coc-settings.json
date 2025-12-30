@@ -1,7 +1,10 @@
 {
-    "snippets.ultisnips.pythonPrompt": false,
-    "html.validate.scripts": true,
-    "pyright.inlayHints.functionReturnTypes": false,
-    "pyright.inlayHints.variableTypes": false,
-    "pyright.inlayHints.parameterTypes": false
+  "inlayHint.enable": false,
+  "snippets.ultisnips.pythonPrompt": false,
+  "html.validate.scripts": true,
+  "pyright.inlayHints.functionReturnTypes": false,
+  "pyright.inlayHints.variableTypes": false,
+  "pyright.inlayHints.parameterTypes": false,
+  "python.analysis.stubPath": "typings",
+  "python.analysis.autoSearchPaths": true,
 }
