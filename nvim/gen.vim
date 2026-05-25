@@ -324,7 +324,7 @@ xmap <Leader>di <Plug>VimspectorBalloonEval
 nnoremap <leader>cf :execute 'let @+ = expand("%:t:r")'<CR>
 
 " open py definition in preview
-nmap <silent> <leader>p :call CocAction('jumpDefinition', 'pedit')<CR>
+nmap <silent> <leader>gd :call CocAction('jumpDefinition', 'pedit')<CR>
 
 " save a session then quit all
 nnoremap <leader>qs :mksession! ./.session.vim<CR>:qa<CR>
@@ -340,3 +340,17 @@ EOF
 
 " render markdown toggle
 nnoremap <leader>rm :RenderMarkdown toggle<CR>
+
+autocmd BufRead,BufNewFile *.mdc set filetype=markdown
+
+" search files - fzf
+nnoremap <leader>s :Files<CR>
+
+" open file path in nerdtree alias
+cabbrev ntf NERDTreeFind
+
+lua << EOF
+require("octo").setup({ picker = "fzf-lua" })
+EOF
+
+let g:NERDTreeNodeDelimiter = "\u00a0"
