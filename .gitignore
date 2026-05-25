@@ -1,1 +1,3 @@
 zsh/zsh_local
+nvim/local.vim
+nvim/local_plugins.vim

@@ -46,7 +46,7 @@ Plug 'MeanderingProgrammer/render-markdown.nvim', {'tag': 'v8.6.0'}
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 
-" octo 
+" octo for pr review 
 Plug 'pwntester/octo.nvim', {'commit': 'b495047f0b9d35de3d8c6b84fad9de296d353b41'}
 Plug 'nvim-lua/plenary.nvim', {'commit': '74b06c6c75e4eeb3108ec01852001636d85a932b'} 
 Plug 'ibhagwan/fzf-lua', {'commit': 'c8aaa74c97157b2c62bdcfc1e57b15c052dc63ca'}
