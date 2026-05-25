@@ -13,7 +13,7 @@ brew install python
 brew install python@3.11
 brew install --cask google-chrome
 brew install --cask iterm2
-brew install neovim@0.10.2
+brew install neovim
 brew install --cask slack
 brew install node
 npm install -g neovim
@@ -22,3 +22,4 @@ brew install font-hack-nerd-font
 brew install grep
 brew install awscli
 brew install tree
+brew install uv

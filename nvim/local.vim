@@ -9,3 +9,6 @@ vnoremap <leader>sp :<C-u>call databricks#main(databricks#get_visual_selection()
 let g:databricks_profile = 'dev'
 " the databricks cluster id you want to execute commands on
 let g:databricks_cluster_id = '0420-160411-p8oi50n1'
+
+" dbt path, expandable triggered by `/` so :e dbt/ will expand
+cabbrev <expr> dbt getcmdtype() == ':' ? 'luigiscripts/internal_analytics/dbt/' : 'dbt'
